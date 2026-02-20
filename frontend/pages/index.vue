@@ -1,0 +1,2 @@
+<template><section><h1>Generate Study Notes</h1><form @submit.prevent="submit"><input v-model="title" placeholder="Title"/><textarea v-model="content" placeholder="Paste content"/><button type="submit">Generate</button></form></section></template>
+<script setup lang="ts">const title=ref('');const content=ref('');const submit=async()=>{}</script>

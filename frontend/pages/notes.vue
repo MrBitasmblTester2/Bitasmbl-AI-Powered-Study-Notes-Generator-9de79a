@@ -1,0 +1,2 @@
+<template><section><h1>Your Notes</h1><div v-for="n in notes" :key="n.id"><h2>{{n.title}}</h2><p>{{n.summary}}</p><div><span v-for="k in n.keywords" :key="k">{{k}}</span></div></div></section></template>
+<script setup lang="ts">const notes=ref([])</script>

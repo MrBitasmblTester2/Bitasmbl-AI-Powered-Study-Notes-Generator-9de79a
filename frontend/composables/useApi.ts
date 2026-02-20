@@ -1,0 +1,1 @@
+export const useApi=()=>{const config=useRuntimeConfig();const base=config.public.apiBase;const get=async(p:string)=>$fetch(base+p);const post=async(p:string,b:any)=>$fetch(base+p,{method:'POST',body:b});return{get,post}}
